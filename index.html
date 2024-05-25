@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tynkertopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> $(function(){ $("#navbar").load("navbar.html"); }); </script>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" style="background-image: url('images/science_experiment.jpg');">
+                <div class="overlay"> <div class="text-overlay">
+                        <h2 class="title">Flagstaff's STEAM Community Center</h2>
+                        <div class="text"><b>Tynkertopia Inc. is a non-profit community center</b> in Flagstaff, AZ focusing on creativity, inquiry, and STEAM knowlegde and skills. Drop in anytime we're open, or register to attend one of our monthly <a href="#classes" class="links">classes.</a><br><br></div>
+                        <div class="text">Hours:<br>Tuesday - Friday: 1 PM - 6 PM<br>Saturday: 10 AM - 4 PM</div>
+                </div> </div>
+            </div>
+            <div class="slide" style="background-image: url('images/bday_party.jpg');">
+                <div class="overlay"> <div class="text-overlay">
+                        <h2 class="title">We Host Birthday Parties!</h2>
+                        <div class="text">Tynkertopia is the <b>go-to venue in Flagstaff</b> for amazing birthday parties! We’d had nothing but rave reviews about our parties. Let us host a party for you or your child. <b>Yes! We do adult birthday parties, too!</b></div><br><br>
+                        <div class="text">Every birthday party is unique, as each child plans their party from the color of the decorations and balloons to the activities for their guests, to the creation each guest will make during the party to take home at the end of the party.</div>
+                </div> </div>
+            </div>
+            <div class="slide" style="background-image: url('images/workshop.jpg');">
+                <div class="overlay"> <div class="text-overlay">
+                        <h2 class="title">Imagination Workshop!</h2>
+                        <div class="text">Come to the workshop and let your imagination flow!  Tynkertopia believes that children learn by doing and creating, and our workshop let's you do just that! With all the tools and materials you'll need, children can create all the crafts they want and let their imagination flow!</div>
+                </div> </div>
+            </div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+<footer id="footer"></footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script> $(function(){ $("#footer").load("footer.html"); }); </script>
+</html>
