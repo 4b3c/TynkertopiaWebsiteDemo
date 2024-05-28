@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 700px; /* Adjust height as necessary */
+            object-fit: cover;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 0, 1);
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 26px 0;
+            text-align: center;
+            z-index: 1000; /* Ensure navbar stays on top */
+        }
+
+        .navbar a {
+            color: black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.3em;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            position: relative;
+            top: -220px; /* Adjust to overlap image */
+            margin: 0 auto;
+            width: 60%; /* Adjust width as necessary */
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        article {
+            margin-top: 20px;
+        }
+
+        .logo {
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        }
+
+        .logo img {
+        max-height: min(20vw, 240px);
+        z-index: 1001;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="participants.html">Participants</a>
+        <a href="photos.html">Photos</a>
+        <a href="resources.html">Resources</a>
+        <a href="events.html">Events</a>
+        <a href="donate.html">Donate</a>
+        <a href="search.html">Search</a>
+    </div>
+
+    <img src="images/science_experiment.jpg" alt="Header Image" class="header-image">
+
+    <div class="content">
+        <div class="logo">
+            <img src="images/tynkertopia_logo.png" alt="Logo">
+        </div>
+        <article>
+            <h1>About Tynkertopia</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eget ligula efficitur euismod. Suspendisse potenti. Nam vehicula, elit in sollicitudin scelerisque, orci elit euismod arcu, at pretium justo arcu non erat. Maecenas nec dignissim libero, ac cursus nisi. Ut nec vestibulum dui, vel varius ligula. Fusce tempus tortor nec lacus venenatis, in fringilla justo facilisis. Vivamus sed arcu et risus vulputate laoreet. Nam consequat felis vitae nibh dignissim, id tincidunt metus dictum.</p>
+            <p>Phasellus euismod, felis at posuere laoreet, leo nunc fermentum justo, sit amet sodales purus nunc at dolor. Cras auctor nibh in sapien ornare, vel faucibus lacus mollis. Proin ut urna ligula. Duis suscipit diam eu est congue, vel molestie velit facilisis. Nam non malesuada risus. Sed vehicula libero ut mi efficitur viverra. Praesent elementum nisl sed magna cursus, id dapibus orci porttitor. Morbi suscipit justo ut dui consequat, ut dignissim nisi eleifend.</p>
+        </article>
+    </div>
+</body>
+</html>

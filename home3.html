@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 400px; /* Adjust height as necessary */
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            top: -50px; /* Adjust to overlap image */
+            margin: 0 auto;
+            width: 75%; /* Adjust width as necessary */
+            padding: 20px;
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .article {
+            position: relative;
+            top: -350px;
+            margin: 0 auto;
+            width: 80%;
+            background-color: rgb(250, 230, 210);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: flex;
+        }
+
+        .tabs {
+            padding: 0px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tabs button {
+            background-color: rgb(250, 230, 210);
+            border: 1px solid rgb(250, 230, 210);
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .tabs button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .tab-content {
+            flex-grow: 1;
+        }
+
+        .logo {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-height: min(20vw, 240px);
+            z-index: 1001;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/building.jpg" alt="Header Image" class="header-image">
+
+    <div class="content">
+        <div class="tabs">
+            <button style="z-index: 1001;">Home</button>
+            <button>About</button>
+            <button>Resources</button>
+            <button>Donate</button>
+        </div>
+        <div class="article">
+            <div class="tab-content">
+                <div class="logo">
+                    <img src="images/tynkertopia_logo.png" alt="Logo">
+                </div>
+                <article>
+                    <h1>Article Title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eget ligula efficitur euismod. Suspendisse potenti. Nam vehicula, elit in sollicitudin scelerisque, orci elit euismod arcu, at pretium justo arcu non erat. Maecenas nec dignissim libero, ac cursus nisi. Ut nec vestibulum dui, vel varius ligula. Fusce tempus tortor nec lacus venenatis, in fringilla justo facilisis. Vivamus sed arcu et risus vulputate laoreet. Nam consequat felis vitae nibh dignissim, id tincidunt metus dictum.</p>
+                    <p>Phasellus euismod, felis at posuere laoreet, leo nunc fermentum justo, sit amet sodales purus nunc at dolor. Cras auctor nibh in sapien ornare, vel faucibus lacus mollis. Proin ut urna ligula. Duis suscipit diam eu est congue, vel molestie velit facilisis. Nam non malesuada risus. Sed vehicula libero ut mi efficitur viverra. Praesent elementum nisl sed magna cursus, id dapibus orci porttitor. Morbi suscipit justo ut dui consequat, ut dignissim nisi eleifend.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
