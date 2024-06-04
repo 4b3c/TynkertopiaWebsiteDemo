@@ -184,3 +184,8 @@ footer ul li {
     font-size: 1em;
     text-align: center;
 }
+
+.spacer {
+    height: 600px;
+    background-color: white;
+}
